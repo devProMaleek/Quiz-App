@@ -26,6 +26,12 @@ body {
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
     width: 500px;
     max-width: 100%;
+    overflow: hidden;
+}
+
+/* H2 style */
+h2 {
+    margin: 0;
 }
 
 /* Quiz Header style */
@@ -39,4 +45,28 @@ ul {
     padding: 0;
 }
 
+ul li {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+ul li label {
+    cursor: pointer;
+}
+
 /* Button Style */
+button {
+    background-color: rgb(226, 11, 11);
+    color: white;
+    padding: 1.5rem;
+    width: 100%;
+    font-family: inherit;
+    display: block;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(245, 5, 5);
+}
