@@ -36,14 +36,16 @@ const quizData = [
 ];
 
 // Get the element of the answer.
-const answerEls = document.querySelectorAll("answer");
+const answerEls = document.querySelectorAll(".answers");
 // Get all the Element, Initialize the variables
+const quiz = document.getElementById("quiz");
 const questionEl = document.getElementById("question");
 const a_text = document.getElementById("a_text");
 const b_text = document.getElementById("b_text");
 const c_text = document.getElementById("c_text");
 const d_text = document.getElementById("d_text");
 const submitBtn = document.getElementById("submit");
+
 
 // Initialize the index of the Quiz.
 let currentQuiz = 0;
@@ -72,14 +74,12 @@ function loadQuiz() {
 function getSelected() {
   // Initialize the value of answer.
   let answer = undefined;
-
   // Get the id of the selected option
   answerEls.forEach((answerEl) => {
     if (answerEl.checked) {
       answer = answerEl.id;
     }
   });
-  console.log(answerEl.che);
   return answer;
 }
 
@@ -87,7 +87,6 @@ function getSelected() {
 function deselectAnswers() {
   answerEls.forEach((answerEl) => {
     answerEl.checked = false;
-    console.log(answer);
   });
 }
 
@@ -95,16 +94,28 @@ submitBtn.addEventListener("click", () => {
   // Check to see the answer
   const answer = getSelected();
 
-  // Increase score if the answer is correct
+  // Check to see if an answer id checked.
   if (answer) {
+    // Increase score if the answer is correct
     if (answer === quizData[currentQuiz].correct) {
       score += 10;
     }
-  }
-  // Increase the index of the quiz data, so as to load the next question.
-  currentQuiz++;
-  // Load the next question
-  if (currentQuiz < quizData.length) {
-    loadQuiz();
+    // Increase the index of the quiz data, so as to load the next question.
+    currentQuiz++;
+
+    // Declare the percentage score variable.
+    let percentageScore = (score / 10 / quizData.length) * 100;
+    // Load the next question
+    if (currentQuiz < quizData.length) {
+      loadQuiz();
+    } else {
+      
+      quiz.innerHTML = `<h2>You answered correctly ${score / 10}/${
+        quizData.length} questions. Your percentage score is ${percentageScore}% </h2> <button onclick="location.reload()">Retake the Quiz</button>`;
+      
+      if (percentageScore >= 70) {
+        document.body.style.backgroundImage = "url('images/Hooray.gif')";
+      }
+    }
   }
 });

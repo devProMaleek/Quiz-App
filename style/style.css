@@ -32,6 +32,8 @@ body {
 /* H2 style */
 h2 {
     margin: 0;
+    text-align: center;
+    padding: 1rem;
 }
 
 /* Quiz Header style */
@@ -69,4 +71,9 @@ button {
 }
 button:hover {
     background-color: rgb(245, 5, 5);
+}
+
+button:focus {
+    outline: none;
+    background-color: rgb(241, 0, 0);
 }
