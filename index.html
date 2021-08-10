@@ -20,19 +20,45 @@
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
     <!-------------------------------- CSS -------------------------------------->
-    <link rel="stylesheet" href="style.css" />
-    <!-------------------------------- SCRIPT -------------------------------------->
-    <script src="script.js" defer></script>
-    <!--Specifies that the script is executed when the page has finished parsing. -->
+    <link rel="stylesheet" href="style/mystyle.css" />
     <title>Quiz App</title>
   </head>
-  <body>
+  <body id="index-page">
     <h1>Welcome to devProMaleek Quiz App.</h1>
     <h4>Test your intellectual ability.</h4>
 
     <div class="category">
-
+      <p>Select your category.</p>
+      <a
+        href="quiz.html"
+        onclick="loadQuiz()"
+        class="categories"
+        id="technology"
+        >Technology</a
+      >
+      <a href="quiz.html" onclick="loadQuiz()" class="categories" id="general"
+        >General Knowledge</a
+      >
+      <a href="quiz.html" onclick="loadQuiz()" class="categories" id="science"
+        >Science</a
+      >
+      <a
+        href="quiz.html"
+        onclick="loadQuiz()"
+        class="categories"
+        id="programming"
+        >Programming</a
+      >
+      <a
+        href="quiz.html"
+        onclick="loadQuiz()"
+        class="categories"
+        id="electronics"
+        >Basic Electronic</a
+      >
     </div>
-
   </body>
+  <!-------------------------------- SCRIPT -------------------------------------->
+  <script src="script.js" defer></script>
+  <!--Specifies that the script is executed when the page has finished parsing. -->
 </html>
