@@ -29,36 +29,24 @@
 
     <div class="category">
       <p>Select your category.</p>
-      <a
-        href="quiz.html"
-        onclick="loadQuiz()"
+      <button
         class="categories"
+        onclick="redirectToQuiz('technology')"
         id="technology"
-        >Technology</a
       >
-      <a href="quiz.html" onclick="loadQuiz()" class="categories" id="general"
-        >General Knowledge</a
-      >
-      <a href="quiz.html" onclick="loadQuiz()" class="categories" id="science"
-        >Science</a
-      >
-      <a
-        href="quiz.html"
-        onclick="loadQuiz()"
-        class="categories"
-        id="programming"
-        >Programming</a
-      >
-      <a
-        href="quiz.html"
-        onclick="loadQuiz()"
-        class="categories"
-        id="electronics"
-        >Basic Electronic</a
-      >
+        Technology
+      </button>
+
+      <button class="categories" onclick="redirectToQuiz('general')" id="general">General Knowledge</button>
+
+      <button class="categories" id="science">Science</button>
+
+      <button class="categories" id="programming">Programming</button>
+
+      <button class="categories" id="electronics">Basic Electronic</button>
     </div>
   </body>
   <!-------------------------------- SCRIPT -------------------------------------->
-  <script src="script.js" defer></script>
+  <script src="script.js"></script>
   <!--Specifies that the script is executed when the page has finished parsing. -->
 </html>

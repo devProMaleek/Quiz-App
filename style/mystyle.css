@@ -51,7 +51,7 @@ h4{
 .category p {
     color: white;
 }
-.category a {
+.category button {
     color: black;
     padding: 1.5rem;
     width: 100%;
@@ -61,19 +61,34 @@ h4{
     font-size: 1.2rem;
     cursor: pointer;
     /* border-radius: 10px; */
-    text-decoration: none;
     text-align: center;
     background-color: white;
 }
-.category a:nth-child(odd) {
+.category button:nth-child(odd) {
     background-color: #f2f2f2;
 }
 
-.category a:hover {
+.category button:hover {
     background-color: #ddd;
 }
 
-a:last-child {
+button:last-child {
   border-radius: 0 0 10px 10px;
 }
 
+@media screen and (min-width: 768px;) {
+
+    h1, h4 {
+        position: absolute;
+        top: 0;
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+    h4{
+        font-size: 0.75rem;
+    }
+    
+}
