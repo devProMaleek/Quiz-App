@@ -1,5 +1,4 @@
 // Defining the the  Quiz data.
-
 const quizData = [
   [
     {
@@ -78,6 +77,46 @@ const quizData = [
       d: "Stone",
       correct: "c",
     },
+    {
+      question: "Entomology is the science that studies ?",
+      a: "Behaviour of human beings",
+      b: "Insects",
+      c: "The origin and history of technical and scientific terms",
+      d: "The formation of rocks",
+      correct: "b"
+    },
+    {
+      question: "Garampani sanctuary is located at ?",
+      a: "Junagarh, Gujarat",
+      b: "Diphu, Assam",
+      c: "Kohima, Nagaland",
+      d: "Gangtok, Sikkim",
+      correct: "b"
+    },
+    {
+      question: "For which of the following disciplines is Nobel Prize awarded?",
+      a: "Physics and Chemistry",
+      b: "Physiology or Medicine",
+      c: "Literature, Peace and Economics",
+      d: "All of the above",
+      correct: "d"
+    },
+    {
+      question: "First human heart transplant operation conducted by Dr. Christiaan Barnard on Louis Washkansky, was conducted in",
+      a: "1967",
+      b: "1968",
+      c: "1958",
+      d: "1922",
+      correct: "a"
+    },
+    {
+      question: "Golf player Vijay Singh belongs to which country?",
+      a: "USA",
+      b: "Fiji",
+      c: "India",
+      d: "UK",
+      correct: "b"
+    }
   ],
 ];
 
