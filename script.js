@@ -34,6 +34,57 @@ const quizData = [
       d: "IBM",
       correct: "b",
     },
+    {
+      question: "What does fiber optic cable resemble, in terms of size?",
+      a: "Pipeline",
+      b: "Bamboo",
+      c: "Telephone wire",
+      d: "Human hair",
+      correct: "d",
+    },
+    {
+      question:
+        "To which of these devices is the cellular telephone most closely related?",
+      a: "Telegraph",
+      b: "Radio",
+      c: "Light bulb",
+      d: "Telescope",
+      correct: "b",
+    },
+    {
+      question: "When was the DVD introduced?",
+      a: "1970",
+      b: "1990",
+      c: "2000",
+      d: "1995",
+      correct: "d",
+    },
+    {
+      question:
+        "Who was responsible for some of the earliest, widely influential development of military rockets?",
+      a: "Elon Musk",
+      b: "Hermann Oberth",
+      c: "William Congreve",
+      d: " Robert Hutchings Goddard",
+      correct: "c",
+    },
+    {
+      question:
+        "What is the oldest still-floating commissioned warship in the world?",
+      a: "HMS Victory",
+      b: "HMS Warrior",
+      c: "USS Missouri",
+      d: "USS Constitution",
+      correct: "d",
+    },
+    {
+      question: "What was given the nickname “Stalin Organ”?",
+      a: "Katyusha rocket launcher",
+      b: "Red army radio",
+      c: "Myasishchev M-4",
+      d: "first Soviet hydrogen bomb",
+      correct: "a"
+    },
   ],
   [
     {
@@ -83,7 +134,7 @@ const quizData = [
       b: "Insects",
       c: "The origin and history of technical and scientific terms",
       d: "The formation of rocks",
-      correct: "b"
+      correct: "b",
     },
     {
       question: "Garampani sanctuary is located at ?",
@@ -91,23 +142,25 @@ const quizData = [
       b: "Diphu, Assam",
       c: "Kohima, Nagaland",
       d: "Gangtok, Sikkim",
-      correct: "b"
+      correct: "b",
     },
     {
-      question: "For which of the following disciplines is Nobel Prize awarded?",
+      question:
+        "For which of the following disciplines is Nobel Prize awarded?",
       a: "Physics and Chemistry",
       b: "Physiology or Medicine",
       c: "Literature, Peace and Economics",
       d: "All of the above",
-      correct: "d"
+      correct: "d",
     },
     {
-      question: "First human heart transplant operation conducted by Dr. Christiaan Barnard on Louis Washkansky, was conducted in",
+      question:
+        "First human heart transplant operation conducted by Dr. Christiaan Barnard on Louis Washkansky, was conducted in",
       a: "1967",
       b: "1968",
       c: "1958",
       d: "1922",
-      correct: "a"
+      correct: "a",
     },
     {
       question: "Golf player Vijay Singh belongs to which country?",
@@ -115,8 +168,8 @@ const quizData = [
       b: "Fiji",
       c: "India",
       d: "UK",
-      correct: "b"
-    }
+      correct: "b",
+    },
   ],
 ];
 
