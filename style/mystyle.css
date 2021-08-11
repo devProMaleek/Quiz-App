@@ -76,19 +76,24 @@ button:last-child {
   border-radius: 0 0 10px 10px;
 }
 
-@media screen and (min-width: 768px;) {
+@media screen and (max-width: 768px) {
 
-    h1, h4 {
+    h1 h4 {
         position: absolute;
         top: 0;
-        margin: 0;
+        margin-top: 2rem;
     }
 
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
     }
     h4{
-        font-size: 0.75rem;
+        font-size: 1rem;
+    }
+
+    .category {
+        width: 90%;
+        margin:auto;
     }
     
 }
